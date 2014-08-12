@@ -21,8 +21,8 @@ Usage
 * Download a JAR from the project releases
 * Add to the plugins directory of your Bukkit server
 * Restart your server
-* access http://yourserver.example.com:8133/consumer for an LTI key and secret
-* add the LTI tool to your LMS using the key and secret and http://yourserver.example.com:8133/config.xml
+* Access http://yourserver.example.com:8133/consumer for an LTI key and secret
+* Add the LTI tool to your LMS using the key and secret and http://yourserver.example.com:8133/config.xml
 
 Development
 ------------
