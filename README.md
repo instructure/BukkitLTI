@@ -1,4 +1,4 @@
-MinecraftLTI
+BukkitLTI
 =========
 
 An LTI tool plugin for [Bukkit](http://bukkit.org/).
