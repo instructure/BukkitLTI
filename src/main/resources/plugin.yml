@@ -1,0 +1,14 @@
+name: BukkitLTI
+main: com.instructure.bukkitlti.BukkitLTI
+version: 0.2.0
+database: true
+commands:
+   register:
+      description: Associate an LTI user with your player
+      usage: /register [token]
+   assignment:
+      description: Begin, submit, or configure an assignment
+      usage: /assignment [begin|submit|set]
+   grade:
+      description: Record a grade for a student
+      usage: /grade @p 0.9
