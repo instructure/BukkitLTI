@@ -5,7 +5,7 @@ An LTI tool plugin for [Bukkit](http://bukkit.org/).
 
 Links
 -----
-* [Demo video](https://www.youtube.com/watch?v=FLWm1OdaNrA&feature=youtu.be)
+* [Demo video](http://www.youtube.com/watch?v=cTZgrmnaMko&list=UUSbm2g19jXCOfIe8OusD17w)
 * [Bukkit project](http://dev.bukkit.org/bukkit-plugins/bukkitlti/)
 
 Demo server
