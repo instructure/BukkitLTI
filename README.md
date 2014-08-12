@@ -1,7 +1,7 @@
 BukkitLTI
 =========
 
-An LTI tool plugin for Bukkit.
+An LTI tool plugin for [Bukkit](http://bukkit.org/).
 
 Links
 -----
@@ -18,7 +18,7 @@ Add the following LTI tool to your LMS:
 
 Usage
 -----
-* Download a JAR from the project releases
+* Download a JAR from the [project releases](https://github.com/instructure/BukkitLTI/releases)
 * Add to the plugins directory of your Bukkit server
 * Restart your server
 * Access http://yourserver.example.com:8133/consumer for an LTI key and secret
