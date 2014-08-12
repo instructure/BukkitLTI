@@ -13,8 +13,8 @@ Demo server
 
 Add the following LTI tool to your LMS:
 
-* Configuration XML: http://107.23.88.186:8133/config.xml
-* Consumer key/secret: copy from http://107.23.88.186:8133/consumer
+* Configuration XML: http://minecraft.inseng.net:8133/config.xml
+* Consumer key/secret: copy from http://minecraft.inseng.net:8133/consumer
 
 Usage
 -----
