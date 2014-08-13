@@ -27,4 +27,4 @@ Usage
 Development
 ------------
 - mvn install (or add the Maven project to your IDE)
-- copy target/BukkitLTI-0.2.0-jar-with-dependencies.jar into your Bukkit server's plugins directory
+- copy the generated jar from your target directory into your Bukkit server's plugins directory
