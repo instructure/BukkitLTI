@@ -219,27 +219,28 @@ public class User {
     if (player == null) {throw new CommandException("Cannot find player.");}
     Assignment assignment = getAssignment();
     if (assignment == null) {throw new CommandException("No current assignment.");}
-    switch (effect) {
-    case "begin":
+    
+    if (effect.equals("begin")) {
       if (assignment.getWorldName() == null) {throw new CommandException("This assignment has no location.");}
       player.teleport(assignment.getLocation());
       player.sendMessage(ChatColor.GREEN + "Began assignment.");
       return;
-    case "submit":
+    }
+    if (effect.equals("submit")) {
       Location l = player.getLocation();
       String warp = String.format("/tp %.0f %.0f %.0f", l.getX(), l.getY(), l.getZ());
       submitResult(warp);
       player.sendMessage(ChatColor.GREEN + "Submitted location.");
       return;
-    case "set":
+    }
+    if (effect.equals("set")) {
       if (!getInstructor()) {throw new CommandException("Only instructors may use this command.");}
       assignment.setLocation(player.getLocation());
       BukkitLTI.getDb().save(assignment);
       player.sendMessage(ChatColor.GREEN + "Set assignment location.");
       return;
-    default:
-      throw new CommandException("Accepted actions: begin, submit, set");
     }
+    throw new CommandException("Accepted actions: begin, submit, set");
   }
   
   public Boolean submitResult(String text) {

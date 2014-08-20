@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.instructure</groupId>
   <artifactId>BukkitLTI</artifactId>
-  <version>0.2.1</version>
+  <version>0.2.2</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -11,8 +11,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.6</source>
+          <target>1.6</target>
         </configuration>
       </plugin>
       <plugin>
