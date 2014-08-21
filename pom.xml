@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.instructure</groupId>
   <artifactId>BukkitLTI</artifactId>
-  <version>0.2.2</version>
+  <version>0.2.3</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -43,6 +43,12 @@
                 </filter>
                 <filter>
                   <artifact>javax.servlet*</artifact>
+                  <includes>
+                    <include>**</include>
+                  </includes>
+                </filter>
+                <filter>
+                  <artifact>commons-logging</artifact>
                   <includes>
                     <include>**</include>
                   </includes>

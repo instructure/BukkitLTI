@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.persistence.Version;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -53,6 +54,9 @@ public class Assignment {
 
   @Nullable
   private float yaw;
+  
+  @Version
+  public long version;
   
   public Assignment() {}
   
@@ -171,5 +175,13 @@ public class Assignment {
   public Location getLocation() {
     World world = Bukkit.getServer().getWorld(worldName);
     return new Location(world, x, y, z, yaw, pitch);
+  }
+  
+  public long getVersion() {
+    return version;
+  }
+  
+  public void setVersion(long version) {
+    this.version = version;
   }
 }

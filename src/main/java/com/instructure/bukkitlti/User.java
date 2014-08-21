@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.persistence.Version;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -67,6 +68,9 @@ public class User {
   
   @Nullable
   private Integer assignmentId;
+  
+  @Version
+  public long version;
   
   public User() {}
   
@@ -212,6 +216,14 @@ public class User {
   
   public void setAssignment(Assignment assignment) {
     setAssignmentId(assignment == null ? null : assignment.getId());
+  }
+  
+  public long getVersion() {
+    return version;
+  }
+  
+  public void setVersion(long version) {
+    this.version = version;
   }
   
   public void assignmentAction(String effect) {

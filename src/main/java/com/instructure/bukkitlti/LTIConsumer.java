@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.persistence.Version;
 
 import com.avaje.ebean.validation.NotNull;
 
@@ -20,6 +21,9 @@ public class LTIConsumer {
 
   @NotNull
   private UUID secret;
+  
+  @Version
+  public long version;
 
   public LTIConsumer() {}
 
@@ -54,5 +58,13 @@ public class LTIConsumer {
 
   public void setSecret(UUID secret) {
     this.secret = secret;
+  }
+  
+  public long getVersion() {
+    return version;
+  }
+  
+  public void setVersion(long version) {
+    this.version = version;
   }
 }
