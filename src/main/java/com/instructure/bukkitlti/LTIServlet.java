@@ -49,16 +49,14 @@ public class LTIServlet extends HttpServlet {
     HttpSession session = request.getSession();
     
     Assignment assignment = null;
-    if (assignmentName != null) {
-      assignment = plugin.getDatabase().find(Assignment.class).where()
-          .eq("name", assignmentName)
-          .eq("contextId", contextId)
-          .eq("toolId", toolId)
-          .eq("consumerId", consumer.getId()).findUnique();
-      if (assignment == null) {
-        assignment = new Assignment(assignmentName, contextId, toolId, consumer);
-        plugin.getDatabase().save(assignment);
-      }
+    assignment = plugin.getDatabase().find(Assignment.class).where()
+        .eq("name", assignmentName)
+        .eq("contextId", contextId)
+        .eq("toolId", toolId)
+        .eq("consumerId", consumer.getId()).findUnique();
+    if (assignment == null) {
+      assignment = new Assignment(assignmentName, contextId, toolId, consumer);
+      plugin.getDatabase().save(assignment);
     }
     
     User user = plugin.getDatabase().find(User.class).where()

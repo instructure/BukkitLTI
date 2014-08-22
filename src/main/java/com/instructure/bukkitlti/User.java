@@ -33,7 +33,7 @@ public class User {
   private String userId;
   
   @Length(max=100)
-  @NotEmpty
+  @Nullable
   private String toolId;
   
   @NotNull

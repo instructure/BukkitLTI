@@ -22,7 +22,7 @@ public class Assignment {
   private int id;
 
   @Length(max=100)
-  @NotEmpty
+  @Nullable
   private String name;
 
   @Length(max=100)
@@ -30,7 +30,7 @@ public class Assignment {
   private String contextId;
 
   @Length(max=100)
-  @NotEmpty
+  @Nullable
   private String toolId;
   
   @NotNull
