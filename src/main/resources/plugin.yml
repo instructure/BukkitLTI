@@ -1,7 +1,6 @@
 name: BukkitLTI
 main: com.instructure.bukkitlti.BukkitLTI
-version: 0.2.4
-database: true
+version: 0.3.0
 commands:
    register:
       description: Associate an LTI user with your player

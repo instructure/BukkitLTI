@@ -1,7 +1,7 @@
 BukkitLTI
 =========
 
-An LTI tool plugin for [Bukkit](http://bukkit.org/).
+A [Bukkit](http://bukkit.org/) plugin for [MinecraftLTI](https://github.com/instructure/MinecraftLTI), for integrating Bukkit servers with LMS applications.
 
 Links
 -----
@@ -26,5 +26,8 @@ Usage
 
 Development
 ------------
-- mvn install (or add the Maven project to your IDE)
+- clone [MinecraftLTI](https://github.com/instructure/MinecraftLTI)
+- mvn install
+- clone BukkitLTI
+- mvn install
 - copy the generated jar from your target directory into your Bukkit server's plugins directory
