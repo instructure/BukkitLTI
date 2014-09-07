@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.instructure</groupId>
   <artifactId>bukkitlti</artifactId>
-  <version>0.3.0</version>
+  <version>0.4.0</version>
   <build>
     <plugins>
       <plugin>
@@ -35,13 +35,7 @@
                   </includes>
                 </filter>
                 <filter>
-                  <artifact>org.mortbay.jasper</artifact>
-                  <includes>
-                    <include>**</include>
-                  </includes>
-                </filter>
-                <filter>
-                  <artifact>javax.servlet*</artifact>
+                  <artifact>com.h2database*</artifact>
                   <includes>
                     <include>**</include>
                   </includes>
@@ -80,7 +74,7 @@
     <dependency>
       <groupId>com.instructure</groupId>
       <artifactId>minecraftlti</artifactId>
-      <version>0.3.0</version>
+      <version>0.4.0</version>
     </dependency>
   </dependencies>
 </project>
