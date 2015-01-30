@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.instructure</groupId>
   <artifactId>bukkitlti</artifactId>
-  <version>0.5.1</version>
+  <version>0.5.2</version>
   <build>
     <plugins>
       <plugin>
@@ -74,7 +74,7 @@
     <dependency>
       <groupId>com.instructure</groupId>
       <artifactId>minecraftlti</artifactId>
-      <version>0.5.1</version>
+      <version>0.5.2</version>
     </dependency>
   </dependencies>
 </project>
