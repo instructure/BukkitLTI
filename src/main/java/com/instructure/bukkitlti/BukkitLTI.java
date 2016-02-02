@@ -17,6 +17,7 @@ public class BukkitLTI extends JavaPlugin {
     getCommand("register").setExecutor(new RegisterCommand(this));
     getCommand("assignment").setExecutor(new AssignmentCommand(this));
     getCommand("grade").setExecutor(new GradeCommand(this));
+    getCommand("instructor").setExecutor(new InstructorCommand(this));
     new BukkitLTIListener(this);
   }
  

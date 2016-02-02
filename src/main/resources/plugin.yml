@@ -1,6 +1,6 @@
 name: BukkitLTI
 main: com.instructure.bukkitlti.BukkitLTI
-version: 0.5.2
+version: 0.5.3
 commands:
    register:
       description: Associate an LTI user with your player
@@ -11,3 +11,6 @@ commands:
    grade:
       description: Record a grade for a student
       usage: /grade @p 0.9
+   instructor:
+      description: Toggle whether a user is an instructor
+      usage: /instructor [username]
